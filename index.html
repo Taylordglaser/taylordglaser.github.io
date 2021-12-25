@@ -123,23 +123,25 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<section>
-							<form method="post" action="#">
+							<form action="https://formsubmit.co/taylordglaser@gmail.com" method="post">
+								<input type="hidden" name="_subject" value="New Email originating from taylordglaser.com">
 								<div class="fields">
 									<div class="field">
 										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
+										<input type="text" name="name" id="name" placeholder="John Doe" required/>
 									</div>
 									<div class="field">
 										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
+										<input type="email" name="email" id="email" placeholder="John.Doe@email.com" required/>
 									</div>
 									<div class="field">
 										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
+										<textarea name="message" id="message" rows="3" placeholder="Type your message here!"></textarea>
 									</div>
 								</div>
 								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
+									<li><button type="submit"/>Send Message</li>
+									<input type="hidden" name="_next" value="https://www.taylordglaser.com/MessageReceived">
 								</ul>
 							</form>
 						</section>
