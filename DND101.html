@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>D&D Player Options</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+      color: #222;
+    }
+    header {
+      background: #2c2c54;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      background: #40407a;
+      padding: 0.5rem;
+    }
+    nav button {
+      background: #706fd3;
+      border: none;
+      color: white;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    nav button:hover {
+      background: #474787;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+    .card {
+      background: white;
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      border-radius: 8px;
+      display: flex;
+      gap: 1rem;
+    }
+    .card img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      background: #ddd;
+      border-radius: 8px;
+    }
+    .card h3 {
+      margin-top: 0;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #2c2c54;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Dungeons & Dragons – Player Options</h1>
+    <p>Simple overview of species and classes for new players</p>
+  </header>
+
+  <nav>
+    <button onclick="showSection('species')">Species</button>
+    <button onclick="showSection('classes')">Classes</button>
+  </nav>
+
+  <div class="container" id="species">
+    <h2>Species</h2>
+
+    <div class="card">
+      <img src="images/aasimar.jpg" alt="Aasimar placeholder" />
+      <div>
+        <h3>Aasimar</h3>
+        <p>Celestial-touched humanoids who often feel a calling toward heroism or destiny.</p>
+        <p><strong>Modern analogy:</strong> People who feel "chosen" or guided by a higher purpose.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/dragonborn.jpg" alt="Dragonborn placeholder" />
+      <div>
+        <h3>Dragonborn</h3>
+        <p>Proud, honor-driven humanoids with draconic ancestry and breath weapons.</p>
+        <p><strong>Modern analogy:</strong> Warrior cultures focused on honor and lineage.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/dwarf.jpg" alt="Dwarf placeholder" />
+      <div>
+        <h3>Dwarf</h3>
+        <p>Stout, resilient people known for craftsmanship, tradition, and stubborn pride.</p>
+        <p><strong>Modern analogy:</strong> Master tradespeople and old-world craftsmen.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/elf.jpg" alt="Elf placeholder" />
+      <div>
+        <h3>Elf</h3>
+        <p>Graceful, long-lived beings with deep ties to magic and nature.</p>
+        <p><strong>Modern analogy:</strong> Artistic, refined cultures with ancient traditions.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/gnome.jpg" alt="Gnome placeholder" />
+      <div>
+        <h3>Gnome</h3>
+        <p>Small, clever folk known for curiosity, invention, and illusion magic.</p>
+        <p><strong>Modern analogy:</strong> Tinkerers, engineers, and playful geniuses.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/goliath.jpg" alt="Goliath placeholder" />
+      <div>
+        <h3>Goliath</h3>
+        <p>Towering mountain-dwellers who value strength, endurance, and competition.</p>
+        <p><strong>Modern analogy:</strong> Extreme athletes or highland warrior cultures.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/halfling.jpg" alt="Halfling placeholder" />
+      <div>
+        <h3>Halfling</h3>
+        <p>Small, cheerful people who value comfort, community, and quiet bravery.</p>
+        <p><strong>Modern analogy:</strong> Hobbits from Lord of the Rings.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/human.jpg" alt="Human placeholder" />
+      <div>
+        <h3>Human</h3>
+        <p>Versatile and ambitious, humans adapt to nearly any role or culture.</p>
+        <p><strong>Modern analogy:</strong> Us — diverse, driven, and adaptable.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/orc.jpg" alt="Orc placeholder" />
+      <div>
+        <h3>Orc</h3>
+        <p>Physically powerful people often stereotyped, but capable of deep loyalty and honor.</p>
+        <p><strong>Modern analogy:</strong> Cultures judged by appearance but rich in values.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/tiefling.jpg" alt="Tiefling placeholder" />
+      <div>
+        <h3>Tiefling</h3>
+        <p>Humanoids with infernal ancestry, often misunderstood or feared.</p>
+        <p><strong>Modern analogy:</strong> Outsiders who embrace individuality.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/changeling.jpg" alt="Changeling placeholder" />
+      <div>
+        <h3>Changeling</h3>
+        <p>Shape-shifters able to alter their appearance at will.</p>
+        <p><strong>Modern analogy:</strong> Actors, spies, or social chameleons.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/warforged.jpg" alt="Warforged placeholder" />
+      <div>
+        <h3>Warforged</h3>
+        <p>Constructed beings built for war who now seek purpose.</p>
+        <p><strong>Modern analogy:</strong> AI or veterans redefining themselves.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/kalashtar.jpg" alt="Kalashtar placeholder" />
+      <div>
+        <h3>Kalashtar</h3>
+        <p>Humans bonded with dream-spirits, granting psychic abilities.</p>
+        <p><strong>Modern analogy:</strong> Spiritual mystics or empaths.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="classes" style="display:none;">
+    <h2>Classes</h2>
+
+    <div class="card">
+      <img src="images/barbarian.jpg" alt="Barbarian placeholder" />
+      <div>
+        <h3>Barbarian</h3>
+        <p>Front-line warriors who channel raw emotion into devastating physical power.</p>
+        <p><strong>Modern analogy:</strong> Berserkers, powerlifters, or rage-fueled action heroes.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/bard.jpg" alt="Bard placeholder" />
+      <div>
+        <h3>Bard</h3>
+        <p>Jack-of-all-trades performers who weave magic through music, speech, and art.</p>
+        <p><strong>Modern analogy:</strong> Musicians, influencers, motivational speakers.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/cleric.jpg" alt="Cleric placeholder" />
+      <div>
+        <h3>Cleric</h3>
+        <p>Divine agents who heal allies and wield holy power in service of a god or ideal.</p>
+        <p><strong>Modern analogy:</strong> Priests, medics, or faith-driven protectors.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/druid.jpg" alt="Druid placeholder" />
+      <div>
+        <h3>Druid</h3>
+        <p>Nature spellcasters who command the elements and transform into animals.</p>
+        <p><strong>Modern analogy:</strong> Shamans, environmentalists, wilderness mystics.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/fighter.jpg" alt="Fighter placeholder" />
+      <div>
+        <h3>Fighter</h3>
+        <p>Highly trained combatants skilled with weapons, armor, and tactics.</p>
+        <p><strong>Modern analogy:</strong> Professional soldiers, athletes, weapon specialists.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/monk.jpg" alt="Monk placeholder" />
+      <div>
+        <h3>Monk</h3>
+        <p>Martial artists who use discipline and inner energy to perform supernatural feats.</p>
+        <p><strong>Modern analogy:</strong> Martial arts masters, ascetics, elite combat athletes.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/paladin.jpg" alt="Paladin placeholder" />
+      <div>
+        <h3>Paladin</h3>
+        <p>Holy knights empowered by sacred oaths, combining combat and divine magic.</p>
+        <p><strong>Modern analogy:</strong> Knightly champions, oath-bound lawmen.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/ranger.jpg" alt="Ranger placeholder" />
+      <div>
+        <h3>Ranger</h3>
+        <p>Wilderness experts who track enemies and fight with precision and survival skills.</p>
+        <p><strong>Modern analogy:</strong> Scouts, hunters, special forces operatives.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/rogue.jpg" alt="Rogue placeholder" />
+      <div>
+        <h3>Rogue</h3>
+        <p>Skill-focused characters specializing in stealth, precision, and clever tactics.</p>
+        <p><strong>Modern analogy:</strong> Thieves, spies, hackers.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/sorcerer.jpg" alt="Sorcerer placeholder" />
+      <div>
+        <h3>Sorcerer</h3>
+        <p>Spellcasters born with innate magical power they learn to control.</p>
+        <p><strong>Modern analogy:</strong> Natural prodigies or people with raw talent.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/warlock.jpg" alt="Warlock placeholder" />
+      <div>
+        <h3>Warlock</h3>
+        <p>Magic users who gain power through pacts with mysterious otherworldly beings.</p>
+        <p><strong>Modern analogy:</strong> Deal-makers, Faustian bargains, risky contracts.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/wizard.jpg" alt="Wizard placeholder" />
+      <div>
+        <h3>Wizard</h3>
+        <p>Scholars of magic who master spells through study and preparation.</p>
+        <p><strong>Modern analogy:</strong> Academics, engineers, lifelong students.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/artificer.jpg" alt="Artificer placeholder" />
+      <div>
+        <h3>Artificer</h3>
+        <p>Inventors who combine magic and technology to create powerful tools.</p>
+        <p><strong>Modern analogy:</strong> Engineers, inventors, tech-savvy problem solvers.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Created for new D&D players</p>
+  </footer>
+
+  <script>
+    function showSection(section) {
+      document.getElementById('species').style.display = section === 'species' ? 'block' : 'none';
+      document.getElementById('classes').style.display = section === 'classes' ? 'block' : 'none';
+    }
+  </script>
+</body>
+</html>
