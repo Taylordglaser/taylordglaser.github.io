@@ -7,15 +7,15 @@
     body {
       font-family: 'Cinzel', serif;
       margin: 0;
-      background: #1e1e2f;
+      background: #1a1a1a;
       color: #f4f4f4;
     }
     header {
-      background: #3b0a45;
+      background: #3b3b3b;
       color: #f4e1d2;
       padding: 2rem 1rem;
       text-align: center;
-      border-bottom: 4px solid #a020f0;
+      border-bottom: 3px solid #d4af37;
     }
     header h1 {
       font-size: 2.5rem;
@@ -31,13 +31,13 @@
       display: flex;
       justify-content: center;
       gap: 1rem;
-      background: #5a1f6b;
+      background: #555555;
       padding: 0.75rem;
     }
     nav button {
-      background: #a020f0;
+      background: #d4af37;
       border: 2px solid #f4e1d2;
-      color: #f4e1d2;
+      color: #1a1a1a;
       padding: 0.5rem 1.25rem;
       cursor: pointer;
       border-radius: 6px;
@@ -46,24 +46,29 @@
     }
     nav button:hover {
       background: #f4e1d2;
-      color: #3b0a45;
-      border-color: #a020f0;
+      color: #1a1a1a;
+      border-color: #d4af37;
       transform: scale(1.05);
     }
     .container {
       max-width: 1000px;
       margin: 2rem auto;
       padding: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
     }
     .card {
-      background: #2c1a36;
-      margin-bottom: 1.5rem;
+      background: #2e2e2e;
+      flex: 1 1 300px;
       padding: 1rem;
       border-radius: 12px;
       display: flex;
       gap: 1rem;
       box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-      border: 2px solid #a020f0;
+      border: 2px solid #d4af37;
+      min-width: 280px;
     }
     .card img {
       width: 150px;
@@ -77,7 +82,7 @@
       margin-top: 0;
       color: #f4e1d2;
       font-size: 1.5rem;
-      text-shadow: 1px 1px #3b0a45;
+      text-shadow: 1px 1px #1a1a1a;
     }
     .card p {
       margin: 0.25rem 0;
@@ -86,9 +91,9 @@
     footer {
       text-align: center;
       padding: 1rem;
-      background: #3b0a45;
+      background: #3b3b3b;
       color: #f4e1d2;
-      border-top: 4px solid #a020f0;
+      border-top: 3px solid #d4af37;
       font-style: italic;
     }
   </style>
@@ -106,11 +111,11 @@
   </nav>
 
   <div class="container" id="species">
-    <!-- Species cards here (unchanged) -->
+    <!-- Species cards here -->
   </div>
 
   <div class="container" id="classes" style="display:none;">
-    <!-- Class cards here (unchanged) -->
+    <!-- Class cards here -->
   </div>
 
   <footer>
@@ -119,8 +124,8 @@
 
   <script>
     function showSection(section) {
-      document.getElementById('species').style.display = section === 'species' ? 'block' : 'none';
-      document.getElementById('classes').style.display = section === 'classes' ? 'block' : 'none';
+      document.getElementById('species').style.display = section === 'species' ? 'flex' : 'none';
+      document.getElementById('classes').style.display = section === 'classes' ? 'flex' : 'none';
     }
   </script>
 </body>
